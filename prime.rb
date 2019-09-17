@@ -7,11 +7,11 @@ def possibly_prime(range_test, num)
 end
 
 def skip_me(num)
-  num == 1 || num == 2 || num == 3 || num == 5 || num == 7 || num == 11 ? true : false
+  num == 2 || num == 3 || num == 5 || num == 7 || num == 11 ? true : false
 end
   
 def prime?(num)
-  if num * -1 == num.abs || num.class == Float
+  if num * -1 == num.abs || num == 1 || num.class == Float
     return false
   elsif skip_me(num) == true
     return true
