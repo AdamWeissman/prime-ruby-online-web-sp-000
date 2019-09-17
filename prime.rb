@@ -5,9 +5,13 @@ def possibly_prime(range_test, num)
   the_booleans = range_test.select {|test_number| test_number if (num % test_number == 0)}
   return the_booleans.size > 1 ? false : true
 end
+
+def skip_me(num)
+  if num == 1 || num == 5
+  
       
 def prime(num)
-  if num * -1 == num || num.class != Fixnum
+  elsif num * -1 == num || num.class != Fixnum
     return nil
   else
     test_this = (num.to_f ** 0.5).floor
