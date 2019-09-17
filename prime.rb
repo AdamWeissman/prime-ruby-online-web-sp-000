@@ -13,8 +13,8 @@ end
 def prime(num)
   if num * -1 == num || num.class != Fixnum
     return false
-  elsif
-    skip_me(num) == true ? true : false
+  elsif skip_me(num) == true
+    return true
   else
     test_this = (num.to_f ** 0.5).floor
     range_test = (1..test_this).to_a
