@@ -10,7 +10,7 @@ def prime(num)
   if num * -1 == num || num.class != Fixnum
     return nil
   else
-    test_this = (num.to_f ** .05).floor
+    test_this = (num.to_f ** 0.5).floor
     range_test = (1..test_this).to_a
     return possibly_prime(range_test, num)
   end
