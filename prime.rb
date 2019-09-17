@@ -10,7 +10,7 @@ def skip_me(num)
   num == 1 || num == 2 || num == 3 || num == 5 || num == 7 || num == 11 ? true : false
 end
   
-def prime(num)
+def prime?(num)
   if num * -1 == num || num.class != Fixnum
     return false
   elsif skip_me(num) == true
