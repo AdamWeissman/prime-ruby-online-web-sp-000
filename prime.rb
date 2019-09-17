@@ -7,12 +7,14 @@ def possibly_prime(range_test, num)
 end
 
 def skip_me(num)
-  if num == 1 || num == 5
+  num == 1 || num == 2 || num == 3 || num == 5 || num == 7 || num == 11 ? true : false
+end
   
-      
 def prime(num)
-  elsif num * -1 == num || num.class != Fixnum
-    return nil
+  if num * -1 == num || num.class != Fixnum
+    return false
+  elsif
+    skip_me(num) == true ? true : false
   else
     test_this = (num.to_f ** 0.5).floor
     range_test = (1..test_this).to_a
