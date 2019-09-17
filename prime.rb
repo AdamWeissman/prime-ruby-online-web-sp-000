@@ -2,3 +2,4 @@
 
 def prime(num)
   square_root
+  
