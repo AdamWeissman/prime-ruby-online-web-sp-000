@@ -1,5 +1,5 @@
 # Add  code here!
 
 def prime(num)
-  square_root
+  test_this = (num.to_f ** .05).
   
