@@ -11,7 +11,7 @@ def skip_me(num)
 end
   
 def prime?(num)
-  if num * -1 == num || num.class == Float
+  if num * -1 == num.abs || num.class == Float
     return false
   elsif skip_me(num) == true
     return true
